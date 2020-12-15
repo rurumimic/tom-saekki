@@ -65,14 +65,14 @@ pyenv install --list
 ```
 
 ```bash
-pyenv install 3.9.0
+pyenv install 3.8.6
 pyenv versions
 ```
 
 ### Virtualenv
 
 ```bash
-pyenv virtualenv 3.9.0 tom-saekki
+pyenv virtualenv 3.8.6 tom-saekki
 pyenv virtualenvs
 ```
 

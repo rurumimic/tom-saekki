@@ -1,34 +1,25 @@
 # tom-saekki
 
-Python 3.8.6
+Python 3.8.7
 
-## Packages
+## 흐름
 
-[magic_google](https://github.com/howie6879/magic_google)
+1. Client
+   1. 문서 입력
+   2. 문서 전송
+2. API
+   1. 문서 분석
+   2. 단어 선별
+   3. 결과 전송
+3. Client
+   1. 단어 검색
+   2. 검색 결과 선별
+   3. 추천 목록 출력
 
-```bash
-pip install magic_google
-```
+---
 
-## Run
+- [ ] api server: flask
+- [ ] grpc
+- [ ] 학습: 클러스터링
+- [ ] 예측
 
-```bash
-python search.py 'justin bieber'
-```
-
-```bash
--------     Search     -------
-
-2020-12-15 23:40:57,786 - magic_google - INFO: https://www.google.com/search?hl=en&q=justin+bieber&btnG=Search&gbv=1&num=5
-
--------     Result     -------
-
-# justin bieber
-- [Justin Bieber (@justinbieber) • Instagram photos and videos](https://www.instagram.com/justinbieber/): 152.8m Followers, 500 Following, 5901 Posts - See Instagram photos and videos fr
-- [Justin Bieber | Home](https://www.justinbiebermusic.com/): In light of the current public health crisis, Justin Bieber announces his resche
-- [Justin Bieber - Wikipedia](https://en.wikipedia.org/wiki/Justin_Bieber): Justin Drew Bieber is a Canadian singer, songwriter and multi-instrumentalist. D
-```
-
-## Markdown
-
-![](images/result.png)
